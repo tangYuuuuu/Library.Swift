@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Library.Swift_Example' do
+  pod 'Library.Swift', :path => '../'
+
+  target 'Library.Swift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,16 @@
+PODS:
+  - Library.Swift (0.1.0)
+
+DEPENDENCIES:
+  - Library.Swift (from `../`)
+
+EXTERNAL SOURCES:
+  Library.Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Library.Swift: 4a72ab003662cbd3a03dec129442431bfa7de1f8
+
+PODFILE CHECKSUM: fdb5df77f2f5cda615d0de1756bbea32e8908423
+
+COCOAPODS: 1.11.2
