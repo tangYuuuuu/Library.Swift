@@ -14,6 +14,8 @@
 		6125CBD55EF6F4EAAC977EA6170764BB /* Library.Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBA238AA6D0A15915AE19517632B9DDC /* Library.Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		697A0B5C36EFE6C179C6D429A2609271 /* Pods-Library.Swift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E66737E10DF774D72650E90831FC718 /* Pods-Library.Swift_Tests-dummy.m */; };
 		7607E5809829ECB74D5FC7BBE83B2EA9 /* Pods-Library.Swift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5780F17FEFDC13F7F6869208528B85 /* Pods-Library.Swift_Example-dummy.m */; };
+		8D94A33C282B96B400DDB5B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D94A33B282B96B400DDB5B3 /* Assets.xcassets */; };
+		8D94A33F282B97C300DDB5B3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D94A33E282B97C300DDB5B3 /* String+Extension.swift */; };
 		A9921F02D25DB104A7CB2D8F8877A9EA /* Pods-Library.Swift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1DF123B63EBA646A888BBEBF065B7F /* Pods-Library.Swift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3E20CC3515986C494556C27F3AF4E88 /* Library.Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B9CF0D1053182EA397AF5D1891931 /* Library.Swift-dummy.m */; };
 		E42683B2207544D7F5B70EABF66A40B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -54,6 +56,8 @@
 		862C1028F37147887248293FAD94D512 /* Library.Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Library.Swift; path = Library_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8682ECB8357BE56346792FF5361A7BDB /* Pods-Library.Swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Library.Swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8C1CC2FB484F9EEDD5390E4030589FD5 /* Library.Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Library.Swift.debug.xcconfig; sourceTree = "<group>"; };
+		8D94A33B282B96B400DDB5B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Library.Swift/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		8D94A33E282B97C300DDB5B3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		97654E1F44028BDAEDE26E4BC51E7335 /* Pods-Library.Swift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Library.Swift_Example-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E66737E10DF774D72650E90831FC718 /* Pods-Library.Swift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Library.Swift_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -183,6 +187,15 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		8D94A33D282B97B400DDB5B3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8D94A33E282B97C300DDB5B3 /* String+Extension.swift */,
+			);
+			name = Extension;
+			path = Library.Swift/Classes/Extension;
+			sourceTree = "<group>";
+		};
 		C4447B5416A3F562B9F0920D740FC1ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +228,9 @@
 		F9AA514FBB4F88E4866B0858258DA868 /* Library.Swift */ = {
 			isa = PBXGroup;
 			children = (
+				8D94A33D282B97B400DDB5B3 /* Extension */,
 				07CE3E248C3D2EE5D888100FF87CE786 /* ReplaceMe.swift */,
+				8D94A33B282B96B400DDB5B3 /* Assets.xcassets */,
 				8D9315D58967FB9FC94C39E2142B7D2D /* Pod */,
 				303CE239CB8AD0AC5BEC03FDE8E158A2 /* Support Files */,
 			);
@@ -343,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D94A33C282B96B400DDB5B3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3E20CC3515986C494556C27F3AF4E88 /* Library.Swift-dummy.m in Sources */,
+				8D94A33F282B97C300DDB5B3 /* String+Extension.swift in Sources */,
 				0D080D531AB1E483307FD5FAFD620267 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
