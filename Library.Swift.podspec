@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Library.Swift'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'swift 常用扩展、基础组件库'
   s.swift_version = '5.0'
 
